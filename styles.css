@@ -51,6 +51,24 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Style specific to China */
+#china button {
+    background-color: #D81B60;
+}
+
+#china button:hover {
+    background-color: #AF1345;
+}
+
+/* Style specific to the United States */
+#us button {
+    background-color: #00BCD4;
+}
+
+#us button:hover {
+    background-color: #008C95;
+}
+
 footer {
     background-color: #333;
     color: #fff;
