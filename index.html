@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test test</title>
+    <meta name="description" content="Generate phone numbers for different countries">
+    <title>Phone Number Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Hello,jk GitHub Pages!</h1>
-    <p>This is a test page hosted on GitHub.</p>
-
+    <header>
+        <h1>Phone Number Generator</h1>
+    </header>
+    <main>
+        <section class="country-section" id="us">
+            <h2>US Phone Number Generator</h2>
+            <p>Generate random US phone numbers for testing purposes.</p>
+            <button onclick="generatePhoneNumber('us')">Generate US Phone Number</button>
+        </section>
+        <!-- Add more sections for other countries as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Phone Number Generator</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
