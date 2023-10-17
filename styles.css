@@ -52,87 +52,18 @@ main {
     color: #666;
 }
 
-/* Style specific to China */
-#china button {
-    background-color: #D81B60;
+/* Button styles for all countries */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-#china button:hover {
-    background-color: #AF1345;
-}
-
-/* Style specific to the United States */
-#us button {
-    background-color: #00BCD4;
-}
-
-#us button:hover {
-    background-color: #008C95;
-}
-
-/* Add styles for other countries */
-#india button {
-    background-color: #FF5722;
-}
-
-#india button:hover {
-    background-color: #E64A19;
-}
-
-#brazil button {
-    background-color: #4CAF50;
-}
-
-#brazil button:hover {
-    background-color: #45A049;
-}
-
-#japan button {
-    background-color: #FFC107;
-}
-
-#japan button:hover {
-    background-color: #FFA000;
-}
-
-#germany button {
-    background-color: #9C27B0;
-}
-
-#germany button:hover {
-    background-color: #7B1FA2;
-}
-
-#uk button {
-    background-color: #795548;
-}
-
-#uk button:hover {
-    background-color: #5D4037;
-}
-
-#france button {
-    background-color: #607D8B;
-}
-
-#france button:hover {
-    background-color: #455A64;
-}
-
-#australia button {
-    background-color: #FF9800;
-}
-
-#australia button:hover {
-    background-color: #F57C00;
-}
-
-#canada button {
-    background-color: #2196F3;
-}
-
-#canada button:hover {
-    background-color: #1565C0;
+button:hover {
+    background-color: #0056b3;
 }
 
 footer {
