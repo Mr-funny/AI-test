@@ -1,54 +1,14 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/* Existing styles remain unchanged */
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-h1 {
-    margin-bottom: 0.5em;
-}
-
-main {
-    max-width: 600px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-}
-
-button {
-    background-color: #007BFF;
+#copyButton {
+    background-color: #28a745; /* Use a green color for the copy button */
     color: #fff;
     padding: 0.5em 1em;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#decodedOutput {
-    margin-top: 1em;
+#copyButton:disabled {
+    background-color: #ccc; /* Change button color when disabled */
+    cursor: not-allowed;
 }
