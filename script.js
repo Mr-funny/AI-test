@@ -1,3 +1,5 @@
+// base64Decode.js
+
 function customBase64Decode(base64String) {
     const binaryString = window.atob(base64String);
     const bytes = new Uint8Array(binaryString.length);
