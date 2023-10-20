@@ -1,25 +1,18 @@
-function decodeBase64() {
-    const base64Input = document.getElementById('base64Input').value;
-    const decodedOutput = document.getElementById('decodedOutput');
-    const copyButton = document.getElementById('copyButton');
+// base64Decode.js
 
+function customBase64Decode(base64String) {
     try {
-        const decodedText = atob(base64Input);
-        decodedOutput.textContent = `Decoded Content: ${decodedText}`;
-        copyButton.disabled = false; // Enable the copy button
+        // Decoding standard Base64
+        const decoded = atob(base64String);
+        return decoded;
     } catch (error) {
-        decodedOutput.textContent = 'Invalid Base64 input.';
-        copyButton.disabled = true; // Disable the copy button
+        // If there are non-base64 characters, use decodeURIComponent
+        const decoded = decodeURIComponent(escape(atob(base64String)));
+        return decoded;
     }
 }
 
-function copyToClipboard() {
-    const decodedOutput = document.getElementById('decodedOutput');
-    const textArea = document.createElement('textarea');
-    textArea.value = decodedOutput.textContent;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-    alert('Copied to clipboard!');
-}
+// 示例用法
+// const base64String = '5YyX5Lqs6KW/5LqM5peX5ZKM5LiK5rW35byg5rGf56iL5bqP5ZGY55qE57uI5p6B5oKy5oOo5ZG96L+Q';
+// const decodedString = customBase64Decode(base64String);
+// console.log(decodedString);
