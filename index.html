@@ -3,78 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Generate phone numbers for different countries">
-    <title>Phone Number Generator</title>
+    <meta name="description" content="Decode base64 content easily.">
+    <title>Base64 Decoder</title>
+    <!-- Add other meta tags for SEO as needed -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Phone Number Generator</h1>
+        <h1>Base64 Decoder</h1>
     </header>
     <main>
-        <section class="country-section" id="us">
-            <h2>US Phone Number Generator</h2>
-            <p>Generate random US phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('us')">Generate US Phone Number</button>
-        </section>
-
-        <section class="country-section" id="china">
-            <h2>China Phone Number Generator</h2>
-            <p>Generate random Chinese phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('china')">Generate Chinese Phone Number</button>
-        </section>
-
-        <!-- Add more sections for other countries as needed -->
-        <section class="country-section" id="india">
-            <h2>India Phone Number Generator</h2>
-            <p>Generate random Indian phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('india')">Generate Indian Phone Number</button>
-        </section>
-
-        <section class="country-section" id="brazil">
-            <h2>Brazil Phone Number Generator</h2>
-            <p>Generate random Brazilian phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('brazil')">Generate Brazilian Phone Number</button>
-        </section>
-
-        <section class="country-section" id="japan">
-            <h2>Japan Phone Number Generator</h2>
-            <p>Generate random Japanese phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('japan')">Generate Japanese Phone Number</button>
-        </section>
-
-        <section class="country-section" id="germany">
-            <h2>Germany Phone Number Generator</h2>
-            <p>Generate random German phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('germany')">Generate German Phone Number</button>
-        </section>
-
-        <section class="country-section" id="uk">
-            <h2>UK Phone Number Generator</h2>
-            <p>Generate random UK phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('uk')">Generate UK Phone Number</button>
-        </section>
-
-        <section class="country-section" id="france">
-            <h2>France Phone Number Generator</h2>
-            <p>Generate random French phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('france')">Generate French Phone Number</button>
-        </section>
-
-        <section class="country-section" id="australia">
-            <h2>Australia Phone Number Generator</h2>
-            <p>Generate random Australian phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('australia')">Generate Australian Phone Number</button>
-        </section>
-
-        <section class="country-section" id="canada">
-            <h2>Canada Phone Number Generator</h2>
-            <p>Generate random Canadian phone numbers for testing purposes.</p>
-            <button onclick="redirectToGenerator('canada')">Generate Canadian Phone Number</button>
-        </section>
+        <label for="base64Input">Enter Base64 Encoded Content:</label>
+        <textarea id="base64Input" rows="4"></textarea>
+        <button onclick="decodeBase64()">Decode</button>
+        <div id="decodedOutput"></div>
     </main>
     <footer>
-        <p>&copy; 2023 Phone Number Generator</p>
+        <p>&copy; 2023 Base64 Decoder</p>
     </footer>
     <script src="script.js"></script>
 </body>
